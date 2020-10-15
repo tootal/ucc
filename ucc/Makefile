@@ -1,4 +1,4 @@
-UCCDIR = /home/iron/bin
+UCCDIR = /home/tootal/uccbuild
 export UCCDIR
 
 all:
