@@ -639,7 +639,7 @@ static int ScanCharLiteral(void)
 			ch = (UCC_WC_T) ScanEscapeChar(wide);
 		}else{
 			if(wide){
-				n = mbrtowc(&ch, CURSOR, MB_CUR_MAX, 0);
+				n = mbrtowc((wchar_t*)&ch, CURSOR, MB_CUR_MAX, 0);
 				if(n > 0){
 					CURSOR += n;
 				}
@@ -712,7 +712,7 @@ next_string:
 			ch =  (UCC_WC_T)ScanEscapeChar(wide);
 		}else{
 			if(wide){
-				n = mbrtowc(&ch, CURSOR, MB_CUR_MAX, 0);
+				n = mbrtowc((wchar_t*)&ch, CURSOR, MB_CUR_MAX, 0);
 				if(n > 0){
 					CURSOR += n;
 				}else{
