@@ -6,7 +6,7 @@
 #include "ucc.h"
 
 #define _P_WAIT 0
-#define UCCDIR "/home/iron/bin/"
+#define UCCDIR "/home/tootal/uccbuild/"
 
 
 /**
@@ -27,7 +27,7 @@ char *CPPProg[] =
 /**
 	ucc -S -v hello.c --dump-ast -o hello.asm
 		------->
-	/home/iron/bin/ucl -o hello.asm --dump-ast hello.i
+	/home/tootal/bin/ucl -o hello.asm --dump-ast hello.i
 		$1	--dump-ast,	some command-line options
 		$2	hello.i,	input file
 		$3	hello.asm,	output file
